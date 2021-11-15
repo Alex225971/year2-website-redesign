@@ -1,0 +1,69 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "contact@pompoko.com"; // pompoko's email
+    $from = $_POST['email']; // this is the sender's Email address
+    $full_name = $_POST['fullname'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $full_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $fu_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $full_name . ", we will contact you shortly.";
+    }
+?>
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+	<head>
+		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/><!--Ensures the websites displays the same on mobile and desktop-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /><!--Aims to make the website compatible with older versions of Internet Explorer-->
+		<meta name="HandheldFriendly" content="true"/><!--To boost mobile compatibility-->
+		<link rel="stylesheet" href="css/normalize.css" /><!--Link normalize.css to this web page-->
+		<link rel="stylesheet" href="css/style.css" /><!--Link main style sheet to this web page-->
+		<link rel="icon" type="image/png" href="images/icon.png"><!--Link 'icon.png' as page favicon-->
+		<title>Pompoko | Contact Us</title><!--Main page title-->
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="images/favicon.png" />
+	</head>
+	<body><!--Markup all web page content inside the 'body' tags -->
+		<header>
+			<img id="logo" src="images/logo_modern.png"/>
+		</header>
+		<nav>
+			<ul>
+				<li><a id="home"href="index.html"><span>Home</a></span></li><!--Main navigation links-->
+				<li><a id="menu" href="menu.html"><span>Menu</span></a></li><!--Main navigation links-->
+				<li><a id="info"href="info.html"><span>Information</span></a></li><!--Main navigation links-->
+				<li><a id="contact" href="contact.html"><span>Contact Us</span></a></li><!--Main navigation links-->
+			</ul>
+		</nav>
+		<main><!--Start main page content-->
+			<p class="column-heading">Contact Us</p>
+			<p id="contact-us">If you wish to contact us you can do so via our phone number, fill out our online form or come into our restaurant.</p>
+			<form action="mailto:contact@pompoko.co.uk" method="post"><!--Contact form markup-->
+				<label for="fname">Full Name</label>
+				<input type="text" id="fname" name="fullname" placeholder="Enter full name">
+				<label for="eml">Email Address</label>
+				<input type="text" id="eml" name="email" placeholder="example@example.com">
+				<label for="msg">Message</label>
+				<textarea type="text" id="msg" name="message" placeholder="Please enter your message"></textarea>
+				<input id="send" name="submit" type="submit" value="Submit">
+			</form>
+			<!--Location information markup-->
+			<p class="two-column-paragraph"><iframe id="contact-iframe" 
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.380131585024!2d-0.14098208482928154!3d50.82412246825108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875850ab82ca0c1%3A0x11a6c98a69da5641!2sPompoko!5e0!3m2!1sen!2suk!4v1577121741332!5m2!1sen!2suk" 
+			width="80%" height="40%" #allowfullscreen=""></iframe></p>
+			<p class="one-column-paragraph"><span class="column-heading">Address</span><br><br><span class="address-paragraph"><br>Pompoko<br>110 Church Street<br>Brighton<br>East Sussex<br>BN1 1UD<br><br>Tel. 07796 001927<br><br><br><br></span>
+			<span class="column-heading">Opening Times</span><br><br><br><span class="address-paragraph">7 Days a week<br>11:30-23:00</span></p>
+
+		</main>
+		<footer><!--Footer content -->
+			<small>&copy; 2020, Pompoko.</small>
+		</footer>
+	</body>
+</html>

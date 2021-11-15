@@ -1,0 +1,537 @@
+ span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}/*CSS reset*/
+html, body {min-height:100%;}
+body{/*Changes main font and hides sideways scroll bar*/
+	font-family: 'Fira Sans Condensed', sans-serif;
+	overflow-x: hidden;
+}
+main{/*Margins for main page content*/
+	height:100%;
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-left:15%;
+	margin-right:15%;
+}
+h1{ /*Changes h1 font and gives a stroke around text*/
+	font-family: 'Carrois Gothic SC', sans-serif;
+	text-align:center;
+	padding-top:6vh;
+	font-size:4vw;
+	color:#eee;
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+} 
+button{ /*Styling for all buttons*/
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size:2vw;
+	padding:0.5vw;
+	color:#222;
+	background-color:#eee;
+	border:4px solid #B73239;
+}
+#index-heading{
+	z-index:1;
+}
+/*Styling for call to action button*/
+#index-button{
+	width:20vw;
+	margin-top:500px;
+	margin-left:40vw;
+	z-index:1;
+	text-align:center;
+}
+header{
+	margin:0 auto;
+	text-align:center;
+}
+#logo{
+	padding-top:1vh;
+	height:120px;
+	width:auto;
+}
+p{
+	line-height:24px;
+}
+#info-iframe{
+	height:60vh;
+	border:4px solid #B73239;
+}
+#contact-iframe{
+	height:60vh;
+	border:4px solid #B73239;
+}
+.column-heading{
+	font-size:1.7vw;
+	padding-top:10vh;
+	padding-bottom:10vh;
+	text-align:center;
+}
+.one-column-heading{
+	width:33%;
+	float:left;
+	font-size:1.4vw;
+	padding-top:5vh;
+	padding-bottom:10vh;
+	text-align:center;
+}
+.one-column-menu-item{
+	padding-top:7%;
+	width:33%;
+	float:left;
+	text-align:center;
+	height:20vh;
+	font-size:1.2vw;
+}
+.menu-image{
+	text-align:center;
+	height:20vh;
+	width:auto;
+	border:4px solid #B73239;
+}
+/*Specific styles for menu images*/
+.one-column-menu-image{
+	text-align:center;
+	margin-bottom:7%;
+	width:33%;
+	float:left;
+	height:20vh;
+	font-size:1vw;
+}
+.menu-contents{
+	text-align:center;
+	width:100%;
+	float:left;
+	height:3vh;
+	font-size:16pt;
+	color:#B73239;
+}
+.menu-contents a{
+	color:#B73239;
+	text-decoration:none;
+}
+#menu-contents{
+	padding-bottom:30vh;
+}
+/*Styles for column paragraphs*/
+.one-column-paragraph{
+	width:33%;
+	float:left;
+	height:5vh;
+	font-size:16pt;
+}
+.no-description{
+	width:33%;
+	float:left;
+	height:1px;
+	font-size:16pt;
+}
+.two-column-paragraph{
+	width:66%;
+	float:left;
+	height:5vh;
+	font-size:16pt;
+}
+.three-column-paragraph{
+	width:100%;
+	float:left;
+	padding-bottom:10vh;
+	font-size:16pt;
+}
+/*Specific styles for allergen disclaimer*/
+#allergen-disclaimer{
+	width:100%;
+	float:left;
+	padding-bottom:10vh;
+	font-size:1.5vw;
+	text-align:center;
+}
+/*Specific styles contact paragraph*/
+#contact-us{
+	width:96%;
+	float:left;
+	text-align:center;
+	padding-bottom:10vh;
+	font-size:16pt;
+}
+/*Styles for column based images*/
+.one-column-image{
+	width:33%;
+	height:auto;
+}
+.two-column-image{
+	width:66%;
+	float:left;
+}
+.three-column-image{
+	width:100%;
+	float:left;
+}
+/*Specific styles for paragraph next to google maps iframe*/
+#map-paragraph{
+	width:66%;
+	float:left;
+	height:60vh;
+}
+/*Specific styles for address*/
+#address-paragraph{
+	padding-top:5vh;
+	padding-bottom:20vh;
+	font-size:16pt;
+	height:60vh;
+}
+#totop{/*'totop' div formatting*/
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	position:fixed;
+	width:70%;
+	height:100px;
+	text-align:center;
+	margin-right:10vw;
+	margin-top:37%;
+}
+#totop a{/*'totop' link colour, padding and centering*/
+	width:100%;
+	margin:0 auto;
+	padding:10px;
+	color:#222;
+	background-color:#eee;
+	border:4px solid #B73239;
+	text-decoration:none;
+}
+form{
+	padding-left:15vw;
+	width:35vw;
+	text-align:center;
+	padding-bottom:15vh;
+}
+label{
+	padding-top:3vw;
+	padding-bottom:3vw;
+	padding-left:5vw;
+	width:40vw;
+	font-size:24pt;
+}
+input{
+	text-align:center;
+	margin-bottom:3vw;
+	height:4vh;
+	width:40vw;
+	font-size:18pt;
+}
+input[type="submit"]{
+	margin-top:5vh;
+	margin-left:5vw;
+	width:20vw;
+	height:auto;
+}
+textarea{
+	width:40vw;
+	font-size:14pt;
+	height:15vh;
+}
+nav {/*Styles for navigation*/
+	margin-top:3vh;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	overflow: auto;
+	width: math(52vw+4px);
+	margin: 0 auto;
+	text-align:center;
+}
+nav ul{
+	background-color: #fff;
+	display:inline-block;
+	font-size:1vw;
+	list-style: none;
+	border-left:1px solid black;
+}
+nav ul li{ /*Additional styles for each navigation element*/
+	width:13vw;
+	float:left;
+	text-align:center;
+	border-right:1px solid black;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+}
+nav li a{
+	padding-top:1vh;
+	padding-bottom:1vh;
+	color:#333;
+	text-decoration:none;
+	width:13vw;
+	float:left;
+}
+nav ul li:hover{
+	width:13vw;
+	float:left;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+/*Styles only for the paragraph of the index page*/
+#index-paragraph{
+	margin-top:35vh;
+}
+/*Styles for nav elements which translate on hover*/
+#menu:hover span {display:none}
+#menu:hover:before {content:"メニュー"}
+#contact:hover span{display:none}
+#contact:hover:before{content:"お問い合わせ"}
+#info:hover span {display:none}
+#info:hover:before {content:"情報"}
+#home:hover span {display:none}
+#home:hover:before{content:"家"}
+button:hover{
+	color:#eee;
+	background-color:#660000;
+}
+#totop a:hover{/*Changing colour of 'totop' when hovered over*/
+	color:#eee;
+	background-color:#660000;
+}
+.menu-contents a:hover{
+	text-decoration:underline;
+}
+footer{ /*font size and text align for all footers*/
+	width:100%;
+	font-size:small;
+	text-align:center;
+	margin-top:20vh;
+	padding-bottom:2vh;
+}
+/*Container for hero pictures*/
+.pic-ctn {
+	margin-top:10vh;
+	height: 50vh;
+	width: auto;
+}
+/*''display keyframe animation*/
+@keyframes display {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(-106vw);
+  }
+  100% {
+    transform: translateX(-106vw);
+  }
+}
+/*More styles for hero image container*/
+.pic-ctn {
+  position: relative;
+}
+/*Styles for hero images*/
+.pic-ctn > img {
+	position:absolute;
+	height:40vw;
+	width:auto;
+	top: 0;
+	opacity: 0;
+	animation: display 10s infinite;
+	z-index:-1;
+	box-shadow: 0px 0px 10px 3px #999;
+}
+/*Animation delays for hero images*/
+img:nth-child(1) {
+  animation-delay: 0s;
+}
+img:nth-child(2) {
+  animation-delay: 5s;
+}
+img:nth-child(3) {
+  animation-delay: 10s;
+}
+@media screen and (max-width: 1500px) {/*media query for smaller desktop screens*/
+	#index-button{
+		width:40vw;
+		margin-top:40px;
+		margin-left:30vw;
+		z-index:1;
+		text-align:center;
+	}
+	#index-paragraph{
+		margin-top:20vh;
+	}
+}
+@media screen and (max-width: 768px) {/*media query for portrait tablets and phones*/
+
+	nav{
+		overflow:hidden;
+	}
+	nav ul{
+		border:none;
+		font-size:3.5vw;
+	}
+	
+	nav li a{
+		width:100vw;
+	}
+	nav ul li a:hover{
+		width:100vw;
+	}
+	nav ul li{
+		width:100vw;
+		overflow:hidden;
+		border:1px solid white;
+	}
+	nav ul li:hover{
+		width:100vw;
+		border:1px solid black;
+	}
+	h1{
+		font-size:5.5vw;
+	}
+	#totop{/*'totop' div formatting*/
+		font-family: 'Carrois Gothic SC', sans-serif;
+		position:fixed;
+		width:100vw;
+		height:100px;
+		text-align:center;
+		margin-right:10vw;
+		margin-top:83%;
+	}
+	.column-heading{
+		font-size:5vw;
+		width:100vw;
+		padding:0;
+		padding-top:7vh;
+		padding-bottom:5vh;
+		float:left;
+		margin:0 auto;
+	}
+	.one-column-menu-item{
+		width:96vw;
+		font-size:3vw;
+		height:5vh;
+	}
+	main{
+		margin:0;
+	}
+	#menu-contents{
+		display:none;
+	}
+	.one-column-heading{
+		display:none;
+	}
+	.one-column-paragraph{
+		width:96vw;
+		margin:0;
+	}
+	.no-description{
+		width:96vw;
+		margin:0;
+	}
+	.two-column-paragraph{
+		width:96vw;
+		margin:0;
+	}
+	.three-column-paragraph{
+		width:96vw;
+		margin:0;
+	}
+	.menu-image{
+		width:68vw;
+		height:auto;
+		margin: 0 auto;
+	}
+	.one-column-menu-image{
+		width:68vw;
+		height:auto;
+		margin: 0 auto;
+		margin-left:13vw;
+	}
+	#allergen-disclaimer{
+		width:96%;
+		float:left;
+		padding-bottom:10vh;
+		font-size:3vw;
+		text-align:center;
+	}
+	iframe{
+		margin:0 auto;
+		text-align:center;
+		width:92vw;
+		float:left;
+	}
+	p{
+		padding:2vw;
+	}
+	#logo{
+		padding-top:1vh;
+		width:80vw;
+		height:auto;
+	}
+	form{
+		padding-left:10vw;
+		width:80vw;
+		text-align:center;
+		padding-bottom:15vh;
+	}
+	label{
+		padding-top:3vw;
+		padding-bottom:3vw;
+		width:80vw;
+		font-size:24pt;
+	}
+	input{
+		text-align:center;
+		margin-bottom:3vw;
+		height:4vh;
+		width:80vw;
+		font-size:18pt;
+	}
+	input[type="submit"]{
+		margin-top:5vh;
+		height:7vh;
+		width:60vw;
+	}
+	textarea{
+		width:80vw;
+		font-size:14pt;
+		height:15vh;
+	}
+	#index-button{
+		width:40vw;
+		margin-top:40px;
+		margin-left:30vw;
+		z-index:1;
+		text-align:center;
+	}
+	#index-paragraph{
+		margin-top:0;
+		line-height:24px;
+	}
+	#map-paragraph{
+		width:92%;
+		float:left;
+		height:60vh;
+	}
+}
